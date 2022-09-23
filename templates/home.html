@@ -1,3 +1,41 @@
-<h1>
-    Hello World
-</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="'login">
+            <h1>Car Price Prediction</h1>
+
+            <!-- Input for our Machine Learning model-->
+            <form action="{{url_for('predict')}}"method="post">
+                <input type="text" name="symboling" placeholder="symboling" required="required" /><br>
+                <input type="text" name="CarName" placeholder="CarName" required="required" /><br>
+                <input type="text" name="fueltype" placeholder="fueltype" required="required" /><br>
+                <input type="text" name="aspiration" placeholder="aspiration" required="required" /><br>
+                <input type="text" name="doornumber" placeholder="doornumber" required="required" /><br>
+                <input type="text" name="carbody" placeholder="carbody" required="required" /><br>
+                <input type="text" name="drivewheel" placeholder="drivewheel" required="required" /><br>
+                <input type="text" name="enginelocation" placeholder="enginelocation" required="required" /><br>
+                <input type="text" name="wheelbase" placeholder="wheelbase" required="required" /><br>
+                <input type="text" name="carwidth" placeholder="carwidth" required="required" /><br>
+                <input type="text" name="carheight" placeholder="carheight" required="required" /><br>
+                <input type="text" name="enginetype" placeholder="enginetype" required="required" /><br>
+                <input type="text" name="cylindernumber" placeholder="cylindernumber" required="required" /><br>
+                <input type="text" name="fuelsystem" placeholder="fuelsystem" required="required" /><br>
+                <input type="text" name="boreratio" placeholder="boreratio" required="required" /><br>
+                <input type="text" name="stroke" placeholder="stroke" required="required" /><br>
+                <input type="text" name="compressionratio" placeholder="compressionratio" required="required" /><br>
+                <input type="text" name="horsepower" placeholder="horsepower" required="required" /><br>
+                <input type="text" name="peakrpm" placeholder="peakrpm" required="required" /><br>
+                <input type="text" name="citympg" placeholder="citympg" required="required" /><br>
+
+
+                <button type="submit">Predict</button> 
+            </form>
+
+            <br>
+            <br>
+        </div>
+        {{prediction_text}}
+    </body>
+</html>
