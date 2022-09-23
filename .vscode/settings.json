@@ -1,10 +1,5 @@
 {
     "python.analysis.extraPaths": [
         "./venv/Lib/site-packages"
-    ],
-    
-    "code-runner.executorMap":
-{
-      "python": "\"E:\\Shruti Business Analytics\\pkgs\\python-3.7.0-hea74fb7_0\\python.exe\""
-}
+    ]
 }
